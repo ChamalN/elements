@@ -318,7 +318,7 @@ describe('buttons', () => {
         ['font-size', '14px'],
         ['line-height', '28px'],
         ['text-decoration', 'none'],
-        ['background-color', 'rgb(230, 230, 230)'],
+
 
         ['border-top-width', '1px'],
         ['border-right-width', '1px'],
@@ -395,7 +395,7 @@ describe('buttons', () => {
         ['color', 'rgb(86, 86, 86)'],
         ['font-size', '14px'],
         ['line-height', '28px'],
-        ['background-color', 'rgb(230, 230, 230)'],
+
 
         ['border-top-width', '1px'],
         ['border-right-width', '1px'],
@@ -544,7 +544,7 @@ describe('buttons', () => {
         ['box-shadow', 'none']
       ]);
     });
-    
+
     it('should match the design spec when fake-button input is disabled', () => {
       assertCssPropertiesAreEqual(getElementById('btn-input-disabled'), [
         ['height', '28px'],
