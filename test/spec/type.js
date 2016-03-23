@@ -317,8 +317,8 @@ describe('type', () => {
 
     it('should match the design spec where it is inline code', () => {
       assertCssPropertiesAreEqual(getElementById('inline-code'), [
-        ['color', 'rgb(84, 84, 84)'],
-        ['font-size', '16px'],
+        ['color', 'rgb(174, 174, 174)'],
+        ['font-size', '14px'],
         ['font-family', '\'Lucida Sans Typewriter\', \'Lucida Console\', monaco, \'Bitstream Vera Sans Mono\', monospace']
       ]);
     });
@@ -328,25 +328,14 @@ describe('type', () => {
         ['display', 'block'],
         ['overflow-x', 'auto'],
         ['overflow-y', 'auto'],
-        ['font-size', '16px'],
+        ['font-size', '14px'],
         ['font-family', '\'Lucida Sans Typewriter\', \'Lucida Console\', monaco, \'Bitstream Vera Sans Mono\', monospace']
       ]);
     });
 
     it('should match the design spec where it is user input', () => {
       assertCssPropertiesAreEqual(getElementById('user-input'), [
-        ['background-color', 'rgb(51, 51, 51)'],
-        ['color', 'rgb(255, 255, 255)'],
-        ['border-bottom-left-radius', '3px'],
-        ['border-bottom-right-radius', '3px'],
-        ['border-top-left-radius', '3px'],
-        ['border-top-right-radius', '3px'],
-        ['box-sizing', 'border-box'],
-        ['padding-bottom', '2px'],
-        ['padding-top', '2px'],
-        ['padding-left', '4px'],
-        ['padding-right', '4px'],
-        ['font-family', '\'Lucida Sans Typewriter\', \'Lucida Console\', monaco, \'Bitstream Vera Sans Mono\', monospace']
+
       ]);
     });
   });

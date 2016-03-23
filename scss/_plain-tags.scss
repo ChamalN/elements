@@ -166,22 +166,12 @@ kbd {
 }
 
 code {
-  color: $pe-text-code-color;
+  color: $pe-code-inline-color;
+  padding: $pe-code-inline-padding;
 }
 
 kbd {
-  padding: 2px 4px;
-  background: $pe-text-kbd-bg;
-  color: $pe-text-kbd-color;
-  font-size: 90%;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
-
-  kbd {
-    padding: 0;
-    font-size: 100%;
-    font-weight: 700;
-    box-shadow: none;
-  }
+  color: $pe-code-inline-color;
+  padding-left: $pe-code-inline-padding;
+  background-color:$pe-code-inline-bg;
 }
-

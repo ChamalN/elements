@@ -97,6 +97,30 @@
   }
 }
 
+@mixin pe-code {
+  background-color:$pe-code-bg;
+  color:$pe-code-color;
+  font-family: pe-font-family(default-monospace);
+  line-height: $pe-code-line-height;
+  font-size:$pe-code-font-size;
+}
+
+@mixin pe-code-inline {
+  font-size:$pe-code-font-size;
+  color: $pe-code-inline-color;
+  padding: $pe-code-inline-padding;
+  background-color:$pe-code-inline-bg;
+  font-family: pe-font-family(default-monospace);
+}
+
+@mixin pe-kbd {
+  font-size:$pe-code-font-size;
+  color: $pe-code-inline-color;
+  padding-left: $pe-code-inline-padding;
+  background-color:$pe-code-inline-bg;
+  font-family: pe-font-family(default-monospace);
+}
+
 // Body copy (as a class, from reset)
 //
 
@@ -166,4 +190,19 @@
 
 .pe-list--inline {
   @include pe-list-inline;
+}
+
+// Code
+//
+
+.pe-code {
+  @include  pe-code;
+}
+
+.pe-code-inline {
+  @include  pe-code-inline;
+}
+
+.pe-kbd {
+  @include  pe-kbd;
 }
